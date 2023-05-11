@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Cadastro de Produto</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" />
+		<script type="text/javascript" src="projeto.js"></script>
+		<script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+	</head>
+	<body>	
+		<nav class="navbar navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Cadastro de Produto(s)</a>
+			</div>
+		</nav>
+		<div class="container-md">
+					<div class="mb-3 mt-3">
+						<input type="text" class="form-control" id="nome" placeholder="Nome" />
+						<!--<div class="form-text">Texto</div>-->
+					</div>
+					<div class="mb-3">
+						<input type="number" class="form-control" id="codigo" placeholder="Código" />
+					</div>
+					<div class="mb-3">
+						<input type="number" class="form-control" id="quantidade" placeholder="Quantidade" />
+					</div>
+					<div class="mb-3">
+						<input type="number" class="form-control" id="valor" placeholder="Valor" />
+					</div>
+					<button type="button" class="btn btn-dark" id="btnSalvar">Enviar</button>
+					<br>
+					<br>
+					<p style="font-family: 'Courier New', Courier, monospace;"><strong>Listagem do(s) Produto(s)</strong></p>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Nome</th>
+								<th scope="col">Código</th>
+								<th scope="col">Quantidade</th>
+								<th scope="col">Valor</th>
+							</tr>
+						</thead>
+						<tbody id="tabela">
+
+						</tbody>
+					</table>
+				</div>
+		
+		<footer class="container">
+			<p class="float-end"><a href="#">Voltar</a></p>
+		</footer>		
+	</body>
+</html>
